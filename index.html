@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- daisy ui cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind css cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- lato font from google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom classes  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom styles -->
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header section  -->
+    <header class="container mx-auto px-2 sm:px-4 md:px-8 lg:px-12">
+        <!-- navigation bar starts here  -->
+        <div class="navbar bg-base-100 mt-4 md:mt-8 lg:mt-12 bg-[#F85559] rounded-full px-8 md:px-12  py-4 md:py-8 justify-between">
+            <div class="navbar-start hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-[#fff] text-sm md:text-base lg:text-lg font-medium space-x-2">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="navbar-center flex lg:flex">
+                <div class="flex justify-center items-center gap-3">
+                    <img src="images/logo.png" alt="log0" class="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12">
+                    <h1 class="text-[#FFF] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">Fruit Burst</h1>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="hidden md:flex items-center bg-white w-3/4 rounded-full">
+                    <input type="search" name="search" id="search" placeholder="search here" class="w-full px-6 py-4 rounded-full text-base font-normal text-[#12121266]">
+                    <img src="images/Frame.png" alt="search-icon" class="relative -left-8">
+                </div>
+                <div class="dropdown dropdown-left dropdown-bottom flex">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#fff] bg-slate-800 text-lg font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main section  -->
+    <main></main>
+    <!-- footer section  -->
+    <footer></footer>
+</body>
+
+</html>
